@@ -1,0 +1,38 @@
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2 col-md-3">Registro de Vehiculos </h1>
+    </div>
+
+    <div class="form-group col-md-3 ">
+    <label>Placa:
+    <input [(ngModel)]="vehiculos.placa" class="form-control" placeholder="Digite placa" />
+    </label>
+    </div> 
+    <div class="form-group col-md-3 ">
+        <label>Color:
+        <input [(ngModel)]="vehiculos.color" class="form-control" placeholder="Digite Color" type="text"/>
+        </label>
+        </div>
+        <div class="form-group col-md-3 ">
+            <label>Modelo:
+            <input [(ngModel)]="vehiculos.modelo" class="form-control" placeholder="Digite Modelo" type="text"/>
+            </label>
+            </div>
+            <div class="form-group col-md-3 ">
+                <label>Propietario:
+                <input [(ngModel)]="vehiculos.propietario" class="form-control" placeholder="Digite Propietario" type="text"/>
+                </label>
+                </div>
+                <div class="form-group col-md-3 ">
+                    <label>Soat:
+                    <input [(ngModel)]="vehiculos.soat" class="form-control" placeholder="Digite  Soat" type="text"/>
+                    </label>
+                    </div>
+                    <div class="form-group col-md-3 ">
+                        <label> Tecnicomencanica:
+                        <input [(ngModel)]="vehiculos.tecnomeca" class="form-control" placeholder=" Digite Tecnicomencanica " type="text"/>
+                        </label>
+                        </div>
+    <div class="form-group col-md-3">
+    <button (click)="add()" class="btn btn-primary">Agregar</button>
+    </div>

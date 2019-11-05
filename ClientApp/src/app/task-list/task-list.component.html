@@ -1,0 +1,25 @@
+<div >
+    <h1 class="h2">Lista Disponible en la otra version</h1>
+    </div>
+    <div>
+    <table class='table table-striped'>
+    <thead>
+    <tr>
+    <tr>
+    <th>Id</th>
+    <th>Cedula</th>
+    <th>Nombre</th>
+    <th>Direccion</th>
+    <th>Ver</th>
+    </tr>
+    </thead>
+    <tr *ngFor="let cliente of clientes">
+    <td>{{cliente.Id}}</td>
+    <td>{{cliente.Cedula}}</td>
+    <td>{{cliente.Nombre}}</td>
+    <td>{{cliente.Direccion}}</td>
+    <td><span *ngIf="task.priority===true;"> <b>Prioritario</b> </span></td>
+    <td><a routerLink="/taskedit/{{task.id}}">ver</a></td>
+    </tr>
+    </table>
+    </div>

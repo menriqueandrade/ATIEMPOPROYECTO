@@ -1,0 +1,24 @@
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2 col-md-3">Agregar Cliente </h1>
+    </div>
+    <div class="form-group col-md-3 ">
+    <label>Cedula:
+    <input [(ngModel)]="cliente.Cedula" class="form-control" placeholder="digite cedula" />
+    </label>
+    </div>
+    <div class="form-group col-md-3">
+    <label>Nombre:
+    <input [(ngModel)]="cliente.Nombre" class="form-control" placeholder="digite nombre "
+           type="text" />
+    </label>
+    </div>
+    <div class="form-group col-md-3">
+    <label>Direccion:
+    <input [(ngModel)]="cliente.Direccion" class="form-control" placeholder="digite direccion"
+           type="text">
+    </label>
+    </div>
+    <div class="form-group col-md-3">
+    <button (click)="add()" class="btn btn-primary">Agregar</button>
+    </div>

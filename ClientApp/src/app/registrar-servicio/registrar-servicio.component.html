@@ -1,0 +1,32 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2 col-md-3">Agregar Servicio </h1>
+    </div>
+    <div class="form-group col-md-3 ">
+    <label>Identificacion del servicio:
+    <input [(ngModel)]="servicio.id_servicio" class="form-control" placeholder="Digite ID" >
+    </label>
+    </div>
+    <div class="form-group col-md-3">
+        <label>Tipo del servicio</label>
+        <select id="tipo_servicio" class="form-control">
+          <option selected>Seleccione el Tipo de serivicio</option>
+          <option>Mensajeria</option>
+          <option>Envio de comida</option>
+        </select>
+  </div>
+    <div class="form-group col-md-3">
+        <label> Precio:
+        <input [(ngModel)]="servicio.precio_servicio" class="form-control" placeholder="digite Precio servicio "  />
+        </label>
+        </div>
+    <div class="form-group col-md-3">
+        <div class="form-group col-md-3">
+            <label>Estado servicio</label>
+            <select id="estado_servicio" class="form-control">
+              <option selected>Seleccione el Tipo de serivicio</option>
+              <option>Entregado </option>
+              <option>En Espera</option>
+            </select>
+      </div> 
+    <button (click)="add()" class="btn btn-primary">Agregar</button>
+    </div>

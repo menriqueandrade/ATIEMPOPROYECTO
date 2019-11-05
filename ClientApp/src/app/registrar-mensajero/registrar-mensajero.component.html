@@ -1,0 +1,52 @@
+
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2 col-md-3">Agregar Mensajero </h1>
+    </div>
+    <div class="form-group col-md-3  ">
+    <label>Cedula:
+    <input [(ngModel)]="mensajero.Cedula" class="form-control"
+           placeholder="digite cedula" />
+    </label>
+    </div>
+    <div class="form-group col-md-3">
+    <label>Nombre:
+    <input [(ngModel)]="mensajero.Nombre" class="form-control" placeholder="digite nombre "
+           type="text" />
+    </label>
+    </div>
+    <div class="form-group col-md-3">
+    <label> Edad:
+    <input [(ngModel)]="mensajero.Edad" class="form-control" placeholder="digite edad " type="text" />
+    </label>
+    </div>
+    <div class="form-group col-md-3">
+    <label> Telefono:
+    <input [(ngModel)]="mensajero.Telefono" class="form-control" placeholder="digite telefono "
+            />
+    </label>
+    </div>
+    <div class="form-group col-md-3">
+    <label>Direccion:
+    <input [(ngModel)]="mensajero.Direccion" class="form-control" placeholder="digite direccion"
+           type="text">
+    </label>
+    </div>
+    <div class="form-group col-md-3">
+    <label> Fecha de ingreso:
+    <input [(ngModel)]="mensajero.FechaIngreso" class="form-control" placeholder="digite fecha"
+           type="date" />
+    </label>
+    </div>
+    <div class="form-group col-md-3">
+    <!---<label>Estado</label>
+            <select id="Estado" class="form-control">
+              <option selected>Seleccione el estado</option>
+              <option>Disponible</option>
+              <option>Ocupado</option>
+            </select>
+     </div>
+-->
+    <div class="form-group col-md-3">
+    <button (click)="add()"  class="btn btn-primary">Agregar</button>
+    </div>
